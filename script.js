@@ -25,7 +25,6 @@ function showLoader() {
 function hideLoader() {
   loader.style.display = "none";
 }
-
 function headerFunc() {
   pagesDiv.innerHTML = "";
   if(page == 76){
@@ -72,16 +71,12 @@ function headerFunc() {
     });
   });
 }
-
 function headerHideLoader(){
   header.style.display = "none"
 }
-
 function headershowLoader(){
   header.style.display = "flex"
 }
-
-
 function reload(){
   checkLoader = true 
   showLoader()
@@ -124,7 +119,6 @@ search_bar.addEventListener("change", function() {
       }
     }
 });
-
 fleche_left.addEventListener("click", () => {
   if(checkLoader == false){
     if (page < nombrePageMax) {
@@ -145,6 +139,4 @@ fleche_rigth.addEventListener("click", () => {
     }
   }
 });
-
-
 reload()
