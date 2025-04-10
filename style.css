@@ -152,7 +152,7 @@ nav{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     nav{
         height: 200px;
     }
