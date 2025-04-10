@@ -1,0 +1,183 @@
+body{
+    background-color: rgb(34, 34, 34);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* nav */
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(47, 47, 47);
+}
+
+
+.sherch_bar_div{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sherch_bar{
+    width: 100%;
+    height: 30%;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 10px;
+    background-color: rgb(34, 34, 34);
+    border: solid white  2px;
+    color: white;
+}
+
+
+/* pokemon */
+#Pokemon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px 0px;
+}
+
+.card{
+    width: 15%;
+    height: 15%;
+    padding: 10px;
+    transition: all 0.4s;
+    background-color: rgb(47, 47, 47);
+    border-radius: 10px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: all 0.4s;
+}
+
+.info_card{
+    font-size: 50px;
+    color: white;
+}
+
+/* loader */
+#loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    z-index: 1000;
+}
+  
+#loading img {
+    width: 10%;
+    animation: rond 2s ease-in-out infinite;
+}
+
+#loading p{
+    color: white;
+    font-size: 50px;
+}
+
+@keyframes rond {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* fleche */
+.header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.rigth{
+    transform: rotate(-90deg);
+}
+.left{
+    transform: rotate(90deg);
+}
+
+.fleche{
+    width: 5%;
+    height: auto; 
+    padding: 30px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.fleche:hover.rigth {
+    transform: rotate(-90deg) scale(1.5);
+    transition: all 0.5;
+}
+  
+.fleche:hover.left {
+    transform: rotate(90deg) scale(1.5);
+    transition: all 0.5;
+}
+
+.pagesDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.pages{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.colorS{
+    color: red;
+}
+
+.pages:hover{
+    color: red;
+    transition: all 0.5s;
+}
+
+
+@media (max-width: 768px) {
+    nav{
+        height: 200px;
+    }
+    .sherch_bar_div{
+        width: 80%;
+    }
+    .header{
+        width: 100%;
+    }
+    .fleche{
+        width: 15%;
+    }
+    .pagesDiv{
+        width: 100%;
+    }
+    #Pokemon{
+        flex-direction: column;
+    }
+    .card{
+        width: 80%;
+    }
+    .fleche:hover.rigth {
+        transform: rotate(-90deg) scale(1);
+    }
+    .fleche:hover.left {
+        transform: rotate(90deg) scale(1);
+    }
+}
