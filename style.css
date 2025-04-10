@@ -163,10 +163,10 @@ nav{
         width: 100%;
     }
     .fleche{
-        width: 10%;
+        width: 15%;
     }
     .pagesDiv{
-        width: 100%;
+        display: none;
     }
     #Pokemon{
         flex-direction: column;
@@ -179,5 +179,8 @@ nav{
     }
     .fleche:hover.left {
         transform: rotate(90deg) scale(1);
+    }
+    .sherch_bar{
+        font-size: 25px;
     }
 }
