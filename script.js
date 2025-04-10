@@ -35,10 +35,10 @@ function headerFunc() {
     }
   }else if(page == 1){
     let Apage = `
-    <a href="#" class="pages colorS" id="${page}">${page}</a>
-    <a href="#" class="pages" id="${page + 1}">${page + 1}</a>
-    <a href="#" class="pages" id="${page + 2}">${page + 2}</a>
-    <a href="#" class="pages" id="${page + 3}">${page + 3}</a>
+    <a href="#" class="pages colorS" id="${page}">${page}:</a>
+    <a href="#" class="pages" id="${page + 1}">${page + 1}:</a>
+    <a href="#" class="pages" id="${page + 2}">${page + 2}:</a>
+    <a href="#" class="pages" id="${page + 3}">${page + 3}:</a>
     <a href="#" class="pages">...</a>
     <a href="#" class="pages" id="${page + 10}">${page + 10}</a>`;
     if(checkLoader == false){
@@ -47,11 +47,11 @@ function headerFunc() {
   }
   else{
     let Apage = `
-    <a href="#" class="pages" id="${page - 1}">${page - 1}</a>
-    <a href="#" class="pages colorS" id="${page}">${page}</a>
-    <a href="#" class="pages" id="${page + 1}">${page + 1}</a>
-    <a href="#" class="pages" id="${page + 2}">${page + 2}</a>
-    <a href="#" class="pages" id="${page + 3}">${page + 3}</a>
+    <a href="#" class="pages" id="${page - 1}">${page - 1}:</a>
+    <a href="#" class="pages colorS" id="${page}">${page}:</a>
+    <a href="#" class="pages" id="${page + 1}">${page + 1}:</a>
+    <a href="#" class="pages" id="${page + 2}">${page + 2}:</a>
+    <a href="#" class="pages" id="${page + 3}">${page + 3}:</a>
     <a href="#" class="pages">...</a>
     <a href="#" class="pages" id="${page + 10}">${page + 10}</a>`;
     if(checkLoader == false){
