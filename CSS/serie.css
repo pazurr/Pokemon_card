@@ -1,0 +1,64 @@
+.header{
+    width: 100%;
+}
+
+.cent{
+    height: 100%;
+}
+
+/* seriePokemon */
+.Allserie{
+    padding: 5% 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.seriePokemon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    border-radius: 10px;
+    border: 3px #959595 solid;
+    padding: 30px;
+    height: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.seriePokemon img{
+    width: 200px;
+    transition: all 0.5s;
+}
+
+.seriePokemon img:hover{
+    transform: scale(1.4);
+    transition: all 0.5s;
+}
+
+.seriePokemon:hover{
+    border: #7e00fd solid 3px;
+    transition: all 0.5s;
+}
+
+/* retoure */
+.retoure{
+    width: 5%;
+    transform: rotate(180deg);
+    padding: 0% 30px 5% 30px;
+    cursor: pointer;
+}
+
+/* logo */
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 20%;
+}

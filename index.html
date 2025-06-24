@@ -1,29 +1,62 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon card</title>
-    <link rel="stylesheet" href="style.css">
+    <title>pokemon card</title>
+    <link rel="stylesheet" href="CSS/commun.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
-    <nav>
-        <div class="sherch_bar_div">
-            <input type="text" class="sherch_bar"  placeholder=" Chercher un Pokémon...">
+<body >
+    <header id="header">
+        <img src="assette/walpeperPokemonRESize.png" alt="" class="backgroundHeader">
+        <nav>
+            <a href="#header"><img src="assette/image_2.png" alt="image logo pokemone" class="logoPokemon" ></a>
+            <div class="centerNav"></div>
+            <div class="allButtonNav">
+                <details class="details_Types">
+                    <summary class="SumDetails">
+                        <p class="textNAV texte_Types">type</p> 
+                        <img src="assette/arrow-next-small-svgrepo-com (4).svg" alt="" class="ArrowNav">
+                    </summary>
+                    <ol class="All_Selection_Type AllSelection"></ol>
+                </details>
+                <details class="details_SubTypes">
+                    <summary class="SumDetails">
+                        <p class="textNAV texte_SubTypes">Subtype</p> 
+                        <img src="assette/arrow-next-small-svgrepo-com (4).svg" alt="" class="ArrowNav">
+                    </summary>
+                    <ol class="All_Selection_SubType AllSelection"></ol>
+                </details>
+                <a href="serie.html" class="textNAV SumDetails secondari">Serie</a>
+            </div>
+        </nav>
+        <div class="rechercheETLogo">
+            <img src="assette/image_1.png" alt="logo pokemon tcg" class="LogoTCG">
+            <input type="text" placeholder="chercher un pokemon(en englais)..." class="sherchPokemonCrad">
         </div>
-    </nav>
-    <div class="header">
-        <img src="assette/Pokemon_Go_Arrow_icon-icons.webp" alt="fleche rigth" class="fleche rigth">
-        <div class="pagesDiv">
+        <div class="fondu"></div>
+    </header>
+    <section class="cards">
+        <div class="card-contner"></div>
+        <div class="reload">
+            <button class="loadeMore">charger plus...</button>
+            <p class="messageEror">désoler nous n'avons pas toruver le pokemon que vous chercher</p>
         </div>
-        <img src="assette/Pokemon_Go_Arrow_icon-icons.webp" alt="fleche left" class="fleche left">
-    </div>
-    <div id="Pokemon">
-    </div>
-    <div id="loading" style="display:none;">
-        <img src="assette/file-pokeball-png-0.png" alt="" class="loadingPokeball">
-        <p>Recherche...</p>
-    </div>
-    <script src="script.js"></script>
+    </section>
+    <footer>
+        <img src="assette/image_2.png" alt="logog pokemon" class="logoPokemonFotter">
+        <p> © 2025 - Site conçu et développé par <br> payette. Tous droits réservés.</p>
+        <div class="resaux">
+            <a href="https://github.com/pazurr" target="_blank"><img src="assette/resaux/github-142-svgrepo-com.svg" alt=""></a>
+            <a href="discord://discordapp.com/users/828981709621297212" target="_blank"><img src="assette/resaux/discord-svgrepo-com (3).svg" alt=""></a>
+            <a href="mailto:eythanpayet90@gmail.com"  target="_blank"><img src="assette/resaux/gmail-svgrepo-com.svg" alt=""></a>
+        </div>
+        </div>
+    </footer>
+    <section class="cartes">
+    </section>
+    <script src="JS/navBar.js"></script>
+    <script src="JS/main.js"></script>
 </body>
 </html>

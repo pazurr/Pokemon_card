@@ -1,0 +1,87 @@
+/* header */
+header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.backgroundHeader{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* fondu */
+.fondu{
+    position: relative;
+    z-index: 2000;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to bottom, transparent, #333333);
+}
+
+
+/* rechercheETLogo */
+.rechercheETLogo{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 3000;
+    width: 50%;
+    height: 100%;
+}
+
+.LogoTCG{
+    width: 500px;
+}
+
+.sherchPokemonCrad{
+    background-color: #333333;
+    border-radius: 10px;
+    padding: 10px;
+    border: 3px #959595 solid;
+    transition: all 0.5s;
+    color: white;
+    width: 70%;
+    height: 30px;
+    font-size: 30px;
+}
+
+.extendSherch{
+    width: 80%;
+}
+
+.centerNav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* card */
+.cards{
+  width: 100%;
+}
+
+
+
+.card-contner{
+  padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+
