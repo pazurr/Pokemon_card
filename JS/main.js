@@ -11,7 +11,6 @@ let body = document.querySelector('body')
 let lettre = "";
 let valuePage = 1;
 let URL ;
-let ApiKey = "a9628dce-e44b-4701-b810-9c6cba4f2f1c";
 let debounceTimer;
 let totalCard;
 let idImg = 0

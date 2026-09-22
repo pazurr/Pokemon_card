@@ -1,5 +1,4 @@
 let URL = "https://api.pokemontcg.io/v2/sets";
-let ApiKey = 'a9628dce-e44b-4701-b810-9c6cba4f2f1c';
 let Allserie = document.querySelector('.Allserie')
 let loadeMore = document.querySelector('.loadeMore');
 let reloadCard = document.querySelector('.reload')
